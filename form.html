@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/form.css">
+
+
+</head>
+<body>
+<head>
+    <h1>Test Form</h1>
+</head>
+<div class="container-fluid">
+    <form method="get" id="form1" class="needs-validation" novalidate>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="fName">First Name</label>
+                    <input type="text" name="fName" id="fName" placeholder="First Name" minlength="2" class="form-control" required>
+                    <div class="invalid-feedback">
+                        Enter a valid first name
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="lName">Last Name</label>
+                    <input type="text" name="lName" id="lName" placeholder="Last Name"  minlength="2" class="form-control" required>
+                    <div class="invalid-feedback">
+                        Enter a valid last name
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+       <div class="form-group">
+           <label for="age">Age</label>
+           <input type="number" name="age" id="age" value="0" min="18" max="99" class="form-control" placeholder="must be over 18"required>
+           <div class="invalid-feedback">
+               Must be between 18 and 99 years old
+           </div>
+       </div>
+       <div class="form-group">
+           <label for="gender">Gender</label>
+           <select name="gender" id="gender" class="form-control" required>
+               <option value="" default selected>Please Choose...</option>
+               <option value="male">Male</option>
+               <option value="female">Female</option>
+           </select>
+           <div class="invalid-feedback">
+               Choose one
+           </div>
+
+       </div>
+
+        <div class="form-check">
+            <input type="checkbox" name="accept" id="accept" class="form-check-input" placeholder="gender" required>
+            <label for="accept" class="form-check-label">Accept Invisible Terms (trust us)</label>
+            <div class="invalid-feedback">
+                You must accept terms
+            </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit form</button>
+    </form>
+
+</div>
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="js/form.js"></script>
+</body>
+</html>
